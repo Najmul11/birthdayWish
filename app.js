@@ -2,7 +2,7 @@ let day=document.getElementById('days');
 let hr=document.getElementById('hrs');
 let min=document.getElementById('min');
 let sec=document.getElementById('sec');
-let endDate=new Date("Sep 2, 2022 09:00:30");
+let endDate=new Date("Sep 2, 2022 09:07:30");
 let endTime=endDate.getTime();
 
 let countdown=setInterval(() => {
