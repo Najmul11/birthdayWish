@@ -1,10 +1,15 @@
-/* qoutation background */
+/* qoutation background and border*/
 .background{
     background-image: url(images/baloons.svg);
     background-repeat: no-repeat;
     background-size:200px;
-    background-position: right;
+    background-position:right;
     background-position-y: 30px;
+    border: 2px solid #e42183;
+}
+.comma-image{
+    width: 40px;
+    height: 40px;
 }
 /* countdown digits */
 h2{

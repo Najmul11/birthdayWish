@@ -1,34 +1,32 @@
-let day=document.getElementById('days');
-let hr=document.getElementById('hrs');
-let min=document.getElementById('min');
-let sec=document.getElementById('sec');
-let endDate=new Date("Sep 6, 2022 21:30:00");
+let days=document.getElementById('days');
+let hours=document.getElementById('hours');
+let minutes=document.getElementById('minutes');
+let seconds=document.getElementById('seconds');
+let endDate=new Date("Sep 17, 2022 00:00:00");
 let endTime=endDate.getTime();
 
 let countdown=setInterval(() => {
     let today=new Date();
     let todayTime=today.getTime()
     let timeLeft=endTime-todayTime;
-    let oneMin=1000*60;
-    let oneHr=oneMin*60;
-    let oneDay=24*oneHr;
+    let oneMinute=1000*60;
+    let oneHour=oneMinute*60;
+    let oneDay=24*oneHour;
 
-    let dayLeft=Math.floor(timeLeft/oneDay)
-    let hrsLeft=Math.floor((timeLeft %oneDay) /oneHr)
-    let minLeft=Math.floor((timeLeft%oneHr)/oneMin)
-    let secLeft=Math.floor((timeLeft%oneMin)/1000)
-    console.log(dayLeft,hrsLeft);
-
-    day.innerHTML=dayLeft;
-    hr.innerHTML=hrsLeft;
-    min.innerHTML=minLeft
-    sec.innerHTML=secLeft
+    let daysLeft=Math.floor(timeLeft/oneDay)
+    let hoursLeft=Math.floor((timeLeft % oneDay) /oneHour)
+    let minutesLeft=Math.floor((timeLeft% oneHour)/oneMinute)
+    let secondsLeft=Math.floor((timeLeft% oneMinute)/1000)
+    days.innerHTML=daysLeft;
+    hours.innerHTML=hoursLeft;
+    minutes.innerHTML=minutesLeft
+    seconds.innerHTML=secondsLeft
     if (endTime<todayTime) {
         clearInterval()
-    day.innerHTML=00;
-    hr.innerHTML=00;
-    min.innerHTML=00
-    sec.innerHTML=00
+    days.innerHTML=00;
+    hours.innerHTML=00;
+    minutes.innerHTML=00
+    seconds.innerHTML=00
     window.location.href='birthday.html'
     }
 }, 1000);
