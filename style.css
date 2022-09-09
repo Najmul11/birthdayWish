@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* -------------
-common styles
-------------- */
-body{
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
-    margin: auto;
+/* qoutation background */
+.background{
+    background-image: url(images/baloons.svg);
+    background-repeat: no-repeat;
+    background-size:200px;
+    background-position: right;
+    background-position-y: 30px;
+}
+/* countdown digits */
+h2{
+    color:#e42183 ;
 }
