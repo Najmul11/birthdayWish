@@ -26,7 +26,7 @@ h2{
     background: #e42183;
     top:0;
     left: 0;
-    height: 1px;
+    height: 2px;
     width: 15px;
   }
   .day-border::before {
@@ -36,7 +36,7 @@ h2{
     top:0;
     left: 0;
     height: 15px;
-    width: 1px;
+    width: 2px;
   }
   /* second border  */
   .sec-border::after {
@@ -45,7 +45,7 @@ h2{
     background: #e42183;
     bottom:0;
     right: 0;
-    height: 1px;
+    height: 2px;
     width: 15px;
   }
   .sec-border::before {
@@ -55,7 +55,27 @@ h2{
     bottom:0;
     right: 0;
     height: 15px;
-    width: 1px;
+    width: 2px;
+  }
+  .qoute-border::after {
+    content: "";
+    position: absolute;
+    background: #e42183;
+    top:0;
+    left: 45%;
+    height: 2px;
+    width: 50px;
+  }
+
+  /* second border  */
+  .side-border::after {
+    content: "";
+    position: absolute;
+    background: #e42183;
+    bottom:0;
+    left: 45%;
+    height: 2px;
+    width: 50px;
   }
 
 /* digit-background */
