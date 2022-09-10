@@ -1,11 +1,10 @@
-/* qoutation background and border*/
+/* qoutation background*/
 .background{
     background-image: url(images/baloons.svg);
     background-repeat: no-repeat;
     background-size:200px;
     background-position:right;
     background-position-y: 30px;
-    /* border: 2px dashed #e42183; */
 }
 .comma-image{
     width: 40px;
@@ -14,5 +13,19 @@
 /* countdown digits */
 h2{
     color:#e42183 ;
+}
+/* border */
+.hr-border{
+    border-top:1px solid #e42183;
+    border-bottom:1px solid #e42183;
+    
+}
+/* digit-background */
+.day-bg{
+    background-image: url(images/P.svg);
+    background-repeat: no-repeat;
+    background-size:150px;
+    background-position:right;
+    background-position-y: 70px;
 }
 
