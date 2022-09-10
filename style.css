@@ -5,7 +5,7 @@
     background-size:200px;
     background-position:right;
     background-position-y: 30px;
-    border: 1px solid #e42183;
+    /* border: 2px dashed #e42183; */
 }
 .comma-image{
     width: 40px;
