@@ -21,11 +21,21 @@ h2{
     
 }
 /* digit-background */
-.day-bg{
-    background-image: url(images/P.svg);
+.common-bg{
     background-repeat: no-repeat;
-    background-size:150px;
-    background-position:right;
-    background-position-y: 70px;
+    background-size:contain;
+    background-position-x:center;
+}
+.day-bg{
+    background-image: url(images/S.svg);
+}
+.hr-bg{
+    background-image: url(images/A.svg);
+}
+.min-bg{
+    background-image: url(images/N.svg);
+}
+.sec-bg{
+    background-image: url(images/A.svg);
 }
 
