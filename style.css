@@ -14,12 +14,50 @@
 h2{
     color:#e42183 ;
 }
-/* border */
+/* digit-border */
 .hr-border{
     border-top:1px solid #e42183;
-    border-bottom:1px solid #e42183;
-    
+    border-bottom:1px solid #e42183;  
 }
+/* day-border */
+.day-border::after {
+    content: "";
+    position: absolute;
+    background: #e42183;
+    top:0;
+    left: 0;
+    height: 1px;
+    width: 15px;
+  }
+  .day-border::before {
+    content: "";
+    position: absolute;
+    background: #e42183;
+    top:0;
+    left: 0;
+    height: 15px;
+    width: 1px;
+  }
+  /* second border  */
+  .sec-border::after {
+    content: "";
+    position: absolute;
+    background: #e42183;
+    bottom:0;
+    right: 0;
+    height: 1px;
+    width: 15px;
+  }
+  .sec-border::before {
+    content: "";
+    position: absolute;
+    background: #e42183;
+    bottom:0;
+    right: 0;
+    height: 15px;
+    width: 1px;
+  }
+
 /* digit-background */
 .common-bg{
     background-repeat: no-repeat;
