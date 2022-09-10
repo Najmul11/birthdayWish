@@ -36,24 +36,24 @@ let countdown=setInterval(() => {
 let music=new Audio();
 music.src="audio/bits.mp3"
 music.loop=true;
-music.play();
+// music.play();
 
-// mute/unmute  
-let mute=document.getElementById('mute');
-let unmute=document.getElementById('unmute');
-unmute.style.display='none'
-// mute function
+// // play/pause  
+let play=document.getElementById('play');
+let pause=document.getElementById('pause');
+pause.style.display='none'
 
-mute.addEventListener('click',()=>{
-    music.muted=true;
-    mute.style.display='none';
-    unmute.style.display='block';
+// play function
+play.addEventListener('click',()=>{
+    music.play();
+    play.style.display='none';
+    pause.style.display='block';
 })
-// // unmute function 
-unmute.addEventListener('click',()=>{
-    music.muted=false;
-    mute.style.display='block';
-    unmute.style.display='none';
+// pause function 
+pause.addEventListener('click',()=>{
+    music.pause();
+    pause.style.display='none';
+    play.style.display='block';
 })
 
 
