@@ -26,7 +26,7 @@ h2{
     background: #e42183;
     top:0;
     left: 0;
-    height: 1px;
+    height: 1.7px;
     width: 15px;
   }
   .day-border::before {
@@ -36,7 +36,7 @@ h2{
     top:0;
     left: 0;
     height: 15px;
-    width: 1px;
+    width: 2px;
   }
   /* second border  */
   .sec-border::after {
@@ -45,7 +45,7 @@ h2{
     background: #e42183;
     bottom:0;
     right: 0;
-    height: 1px;
+    height: 1.7px;
     width: 15px;
   }
   .sec-border::before {
@@ -55,49 +55,25 @@ h2{
     bottom:0;
     right: 0;
     height: 15px;
-    width: 1px;
+    width: 1.7px;
   }
-  .qoute-border::after {
-    content: "";
-    position: absolute;
-    background: #e42183;
-    top:0;
-    left: 0;
-    height: 1px;
-    width: 15px;
-  }
-  .qoute-border::before {
-    content: "";
-    position: absolute;
-    background: #e42183;
-    top:0;
-    left: 0;
-    height: 15px;
-    width: 1px;
-  }
-
-  /* second border  */
-  .side-border::after {
-    content: "";
-    position: absolute;
-    background: #e42183;
-    bottom:0;
-    right: 0;
-    height: 1px;
-    width: 15px;;
-  }
-  .side-border::before {
-    content: "";
-    position: absolute;
-    background: #e42183;
-    bottom:0;
-    right: 0;
-    height: 15px;
-    width: 1px;
-  }
+/* .qoute-border */
+.qoute-border{
+  border-top: 1px solid ;
+  border-image:linear-gradient(to right,rgba(0,0,0,0),#e42183,rgba(0,0,0,0));
+  border-image-slice:1;
+}
+.side-border{
+  border-bottom: 1px solid ;
+  border-image:linear-gradient(to right,rgba(0,0,0,0),#e42183,rgba(0,0,0,0));
+  border-image-slice:1;
+}
 /* fontawesome */
 .fontawesome{
-  color: #e42183;
+  color: #dc3545;
+}
+.badge-bg{
+  background-color: #e4218393;
 }
 
 
@@ -120,4 +96,9 @@ h2{
     background-image: url(images/A.svg);
 }
 
-
+/* whole body background */
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
