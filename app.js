@@ -3,7 +3,7 @@ let days=document.getElementById('days');
 let hours=document.getElementById('hours');
 let minutes=document.getElementById('minutes');
 let seconds=document.getElementById('seconds');
-let endDate=new Date("Sep 17, 2022 00:00:00");
+let endDate=new Date("Sep 13, 2022 12:55:10");
 let endTime=endDate.getTime();
 
 let countdown=setInterval(() => {
@@ -29,16 +29,16 @@ let countdown=setInterval(() => {
     minutes.innerHTML=00
     seconds.innerHTML=00
     window.location.href='birthday.html'
+    // music.play()
     }
 }, 1000);
 
-// music 
+// music
 let music=new Audio();
 music.src="audio/bits.mp3"
 music.loop=true;
-// music.play();
 
-// // play/pause  
+ // play/pause  
 let play=document.getElementById('play');
 let pause=document.getElementById('pause');
 pause.style.display='none'
@@ -57,7 +57,7 @@ pause.addEventListener('click',()=>{
 })
 
 
-
+// body background
 
 // Some random colors
 const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];

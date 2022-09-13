@@ -1,4 +1,6 @@
-/* qoutation background*/
+/* ---------------
+qoutation background
+-------------------*/
 .background{
     background-image: url(images/baloons.svg);
     background-repeat: no-repeat;
@@ -6,15 +8,31 @@
     background-position:right;
     background-position-y: 30px;
 }
+/* ----------------
+qoute-border 
+----------------*/
+.qoute-border{
+  border-top: 1px solid ;
+  border-image:linear-gradient(to right,rgba(0,0,0,0),#e42183,rgba(0,0,0,0));
+  border-image-slice:1;
+}
+.side-border{
+  border-bottom: 1px solid ;
+  border-image:linear-gradient(to right,rgba(0,0,0,0),#e42183,rgba(0,0,0,0));
+  border-image-slice:1;
+}
 .comma-image{
     width: 40px;
     height: 40px;
 }
-/* countdown digits */
+/* countdown digits color */
 h2{
     color:#e42183 ;
 }
-/* digit-border */
+/* ------------
+digit-border
+------------- */
+/* hour border */
 .hr-border{
     border-top:1px solid #e42183;
     border-bottom:1px solid #e42183;  
@@ -26,7 +44,7 @@ h2{
     background: #e42183;
     top:0;
     left: 0;
-    height: 1.7px;
+    height: 1.5px;
     width: 15px;
   }
   .day-border::before {
@@ -36,7 +54,7 @@ h2{
     top:0;
     left: 0;
     height: 15px;
-    width: 2px;
+    width: 1.5px;
   }
   /* second border  */
   .sec-border::after {
@@ -45,7 +63,7 @@ h2{
     background: #e42183;
     bottom:0;
     right: 0;
-    height: 1.7px;
+    height: 1.5px;
     width: 15px;
   }
   .sec-border::before {
@@ -55,19 +73,29 @@ h2{
     bottom:0;
     right: 0;
     height: 15px;
-    width: 1.7px;
+    width: 1.5px;
   }
-/* .qoute-border */
-.qoute-border{
-  border-top: 1px solid ;
-  border-image:linear-gradient(to right,rgba(0,0,0,0),#e42183,rgba(0,0,0,0));
-  border-image-slice:1;
+  /* --------------
+  digit-background 
+  -----------------*/
+.common-bg{
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position-x:center;
 }
-.side-border{
-  border-bottom: 1px solid ;
-  border-image:linear-gradient(to right,rgba(0,0,0,0),#e42183,rgba(0,0,0,0));
-  border-image-slice:1;
+.day-bg{
+  background-image: url(images/S.svg);
 }
+.hr-bg{
+  background-image: url(images/A.svg);
+}
+.min-bg{
+  background-image: url(images/N.svg);
+}
+.sec-bg{
+  background-image: url(images/A.svg);
+}
+
 /* fontawesome */
 .fontawesome{
   color: #dc3545;
@@ -76,29 +104,103 @@ h2{
   background-color: #e4218393;
 }
 
-
-/* digit-background */
-.common-bg{
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x:center;
-}
-.day-bg{
-    background-image: url(images/S.svg);
-}
-.hr-bg{
-    background-image: url(images/A.svg);
-}
-.min-bg{
-    background-image: url(images/N.svg);
-}
-.sec-bg{
-    background-image: url(images/A.svg);
-}
-
+/*-------------- 
+birthday wish page 
+--------------------*/
 /* whole body background */
 .ball {
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
 }
+/* background image in body */
+.bg-image{
+  background-image: url(images/30.svg);
+  background-repeat: no-repeat;
+  background-size:contai;
+  background-position:center;
+}
+/* Birthday sentence visibiliyt animation */
+.slide{
+  animation: show ease 1s 1  ;
+}
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.0;
+  }
+ 
+  100%{
+    opacity: 1;
+  }
+}
+/* --------------
+changing word container
+-----------------  */
+.word-container{
+  max-height: 65px;
+  overflow: hidden;
+  transition: all ease 1s;
+ }
+ .word-container:hover{
+  box-shadow: inset 700px 0 0 0px  rgba(0, 255, 255, 0.096);
+ }
+
+/* changing words color */
+.text-1{
+  color: #e42183 ;
+
+}
+.text-2{
+  color:#2AA7FF ;
+
+}
+.text-3{
+  color:purple  ;
+}
+.text-4{
+  color:#F85F36  ;
+}
+/* changing words container visibility animation */
+.slide-2{
+  animation: appear 2s  1 forwards;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/* changing words */
+.words{
+  display: block;
+  height: 100%;
+  animation: spinWords 5s ease-in-out  0.5s infinite  ;
+}
+@keyframes spinWords {
+  25%{
+    transform: translateY(-115%);
+  }
+  50%{
+    transform: translateY(-230%);
+  }
+  75%{
+    transform: translateY(-350%);
+  }
+  100%{
+    transform: translateY(-430%);
+  }
+}
+
+
+
