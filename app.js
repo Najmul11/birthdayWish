@@ -3,7 +3,7 @@ let days=document.getElementById('days');
 let hours=document.getElementById('hours');
 let minutes=document.getElementById('minutes');
 let seconds=document.getElementById('seconds');
-let endDate=new Date("Sep 13, 2022 13:10:10");
+let endDate=new Date("Sep 17, 2022 00:00:00");
 let endTime=endDate.getTime();
 
 let countdown=setInterval(() => {
@@ -35,7 +35,7 @@ let countdown=setInterval(() => {
 
 // music
 let music=new Audio();
-music.src="audio/bits.mp3"
+music.src="audio/mixed.mp3"
 music.loop=true;
 
  // play/pause  
