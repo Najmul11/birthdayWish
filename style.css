@@ -109,6 +109,9 @@ digit-border
 birthday wish page 
 --------------------*/
 /* whole body background */
+body{
+  background-color: #f3f2f057;
+}
 .ball {
   position: absolute;
   border-radius: 100%;
@@ -118,12 +121,13 @@ birthday wish page
 .bg-image{
   background-image: url(images/30.svg);
   background-repeat: no-repeat;
-  background-size:contai;
+  /* background-size:contain; */
   background-position:center;
+  background-position-y: -50%;
 }
 /* Birthday sentence visibiliyt animation */
 .slide{
-  animation: show ease 1s 1  ;
+  animation: show ease 2s 1  ;
 }
 @keyframes show {
   0%{
@@ -149,8 +153,24 @@ changing word container
   transition: all ease 1s;
  }
  .word-container:hover{
-  box-shadow: inset 700px 0 0 0px  rgba(0, 255, 255, 0.096);
+  box-shadow: inset 700px 0 0 0px  rgba(0, 255, 255, 0.173);
  }
+
+ /* changing words container visibility animation */
+.slide-2{
+  animation: appear 6s  1 forwards;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 /* changing words color */
 .text-1{
@@ -167,26 +187,12 @@ changing word container
 .text-4{
   color:#F85F36  ;
 }
-/* changing words container visibility animation */
-.slide-2{
-  animation: appear 2s  1 forwards;
-}
-@keyframes appear {
-  0%{
-    opacity: 0;
-  }
-  25%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
+
 /* changing words */
 .words{
   display: block;
   height: 100%;
-  animation: spinWords 5s ease-in-out  0.5s infinite  ;
+  animation: spinWords 5s ease-in-out  3s infinite  ;
 }
 @keyframes spinWords {
   25%{

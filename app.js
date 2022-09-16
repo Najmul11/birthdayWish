@@ -29,7 +29,6 @@ let countdown=setInterval(() => {
     minutes.innerHTML=00
     seconds.innerHTML=00
     window.location.href='birthday.html'
-    // music.play()
     }
 }, 1000);
 

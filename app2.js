@@ -16,7 +16,7 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()}em`;
   ball.style.height = ball.style.width;
-  
+
   balls.push(ball);
   document.body.append(ball);
 }
@@ -25,20 +25,43 @@ for (let i = 0; i < numBalls; i++) {
 balls.forEach((el, i, ra) => {
   let to = {
     x: Math.random() * (i % 2 === 0 ? -11 : 11),
-    y: Math.random() * 12
+    y: Math.random() * 12,
   };
 
   let anim = el.animate(
     [
       { transform: "translate(0, 0)" },
-      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+      { transform: `translate(${to.x}rem, ${to.y}rem)` },
     ],
     {
       duration: (Math.random() + 1) * 2000, // random duration
       direction: "alternate",
       fill: "both",
       iterations: Infinity,
-      easing: "ease-in-out"
+      easing: "ease-in-out",
     }
   );
+});
+
+// music
+let music = new Audio();
+music.src = "audio/mixed.mp3";
+music.loop = true;
+
+// play/pause
+let play = document.getElementById("play");
+let pause = document.getElementById("pause");
+pause.style.display = "none";
+
+// play function
+play.addEventListener("click", () => {
+  music.play();
+  play.style.display = "none";
+  pause.style.display = "block";
+});
+// pause function
+pause.addEventListener("click", () => {
+  music.pause();
+  pause.style.display = "none";
+  play.style.display = "block";
 });
